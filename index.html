@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
   </head>
-  <body>
-    <header class="header">
-        <h1>Welcome to my blog</h1>
-        <nav class="top-navegation">
-            <ul>
+  <body class="wrapper">
+    <header class="header-top">
+        <h1 class="header-top__heading">Welcome to my blog</h1>
+        <nav class="header-top__nav">
+            <ul class="nav-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Categories</a></li>
                 <li><a href="#">About</a></li>
@@ -18,35 +19,41 @@
         </nav>
     </header>
     <main class="main-content">
-        <section>
-            <article>
-
+        <section class="published-posts">
+            <article class="published-posts__article">
+                <h2 class="main-heading published-posts__heading">Post Title 1</h2>
+                <p class="article-important__p text-padding">Published on September 12, 2023 by Jhon Doe</p>
+                <p class="text-padding">This is the content of the blog post...</p>
+                <p class="text-padding">More content goes here...</p>
             </article>
-            <article>
-
+            <article class="published-posts__article">
+                <h2 class="main-heading published-posts__heading">Post Title 2</h2>
+                <p class="article-important__p text-padding">Published on September 10, 2023 by Jane Smith</p>
+                <p class="text-padding">This is another blog post...</p>
+                <p class="text-padding">More content goes here...</p>
             </article>
         </section>
-        <aside>
-            <section>
-                <h2>a</h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+        <aside class="side-aside">
+            <section class="side-aside__recent-posts">
+                <h2 class="main-heading">Recent Posts</h2>
+                <ul class="nav-list">
+                    <li class="nav-list__li text-padding">Post Title 1</li>
+                    <li class="nav-list__li text-padding">Post Title 2</li>
+                    <li class="nav-list__li text-padding">Post Title 3</li>
                 </ul>
             </section>
-            <section>
-                <h2>a</h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+            <section class="side-aside__categories">
+                <h2 class="main-heading">Categories</h2>
+                <ul class="nav-list">
+                    <li class="nav-list__li text-padding">Category 1</li>
+                    <li class="nav-list__li text-padding">Category 2</li>
+                    <li class="nav-list__li text-padding">Category 3</li>
                 </ul>
             </section>
         </aside>
     </main>
     <footer class="footer">
-        <p>&copy;2023 My blog. All rights reserved</p>
+        <p class="footer-copy">&copy;2023 My blog. All rights reserved.</p>
     </footer>
   </body>
 </html>
